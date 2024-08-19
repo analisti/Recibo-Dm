@@ -1,0 +1,174 @@
+/* Estilização básica para o recibo */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.recibo {
+  margin-bottom: 20px;
+}
+.input-small {
+  width: 100px;
+}
+.input-medium {
+  width: 200px;
+}
+.input-large {
+  width: 300px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.recibo {
+  border: 1px solid #000;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 8px; /* Cantos arredondados */
+}
+
+h1 {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+input[type="text"] {
+  border: none;
+  border-bottom: 1px solid #000;
+  width: auto;
+  font-size: 14px;
+  padding: 2px 5px;
+  margin: 0 5px;
+  border-radius: 4px; /* Cantos arredondados */
+}
+
+.input-small {
+  width: 50px;
+}
+
+.input-medium {
+  width: 150px;
+}
+
+.input-large {
+  width: 200px;
+}
+
+.inputs-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputs-row label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.inputs-row input[type="text"] {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  border-radius: 4px; /* Cantos arredondados */
+}
+
+hr {
+  border: 0;
+  border-top: 1px dashed #000;
+  margin: 20px 0;
+  border-radius: 4px; /* Cantos arredondados */
+}
+
+@media print {
+  /* Ajustes para impressão */
+  body {
+    background-color: #fff;
+  }
+
+  .container {
+    margin: 0;
+  }
+
+  .recibo {
+    page-break-inside: avoid;
+  }
+
+  hr {
+    border-top: 1px solid #000;
+  }
+}
+
+/* Campo separado para Contrato e Acerto */
+.contrato-acerto-box {
+  border: 1px solid #000;
+  padding: 10px;
+  margin: 10px 0;
+  width: 45%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  display: inline-block;
+  border-radius: 8px; /* Cantos arredondados */
+}
+
+.contrato-acerto-box p {
+  margin: 5px 0;
+}
+
+/* Campo separado para os dados do corretor */
+.corretor-box {
+  border: 1px solid #000;
+  padding: 10px;
+  margin: 10px 0;
+  width: 45%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  display: inline-block;
+  border-radius: 8px; /* Cantos arredondados */
+}
+
+.corretor-box p {
+  margin: 5px 0;
+}
+
+.corretor-box .input-large {
+  width: 100%;
+  padding: 5px;
+  border-radius: 4px; /* Cantos arredondados */
+}
+
+/* Contêiner que envolve a corretor-box e os textos à direita */
+.corretor-assinatura-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Estilo para a parte de assinatura à direita */
+.assinatura {
+  text-align: center;
+  width: 45%;
+  border-radius: 8px; /* Cantos arredondados */
+}
+
+.assinatura p {
+  margin-bottom: 20px; /* Ajuste a distância conforme necessário */
+}
+
+.assinatura hr {
+  margin: 0;
+  padding: 0;
+}
+
+.assinatura em {
+  display: block;
+  margin-top: 0;
+}
